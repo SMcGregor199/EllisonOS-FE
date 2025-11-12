@@ -1,14 +1,14 @@
-
-import './App.css'
-
+import {Routes, Route} from "react-router-dom";
+import Home from "./pages/Home"
+import StaticLayout from "./StaticLayout"
 function App() {
- const x : string = "Studies";
 
   return (
-    <>
-      <h1>Ellison {x}</h1>
-      <p>Ellison is a {x}</p>
-    </>
+    <Routes>
+      <Route element={<StaticLayout />}>
+        <Route path="/" element={<Home />} />
+      </Route>
+    </Routes>
   )
 }
 
