@@ -21,8 +21,7 @@ createRoot(document.getElementById('root')!).render(
         Menu:{
           itemBg:'transparent',
           colorText: '#fff'
-        },
-        Layout: { headerHeight: 64 },
+        }
       }
   }}>
       <Router>

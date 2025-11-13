@@ -1,20 +1,36 @@
+/* I'm using the :root selector as a place to define global variables and redefine ones from antD */
 :root{
     --app-heading: "Fraunces", serif;
     --app-body: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-    --ant-font-size: clamp(0.95rem, 2.8vw, 1.25rem);
-    --ant-font-size-heading-1: clamp(1.5rem, 6.5vw, 4.0625rem);
-    --ant-font-size-heading-2: clamp(1.25rem, 4vw, 2.25rem);
-    --ant-font-size-heading-3: clamp(1.125rem, 3vw, 1.75rem);
-    
+    --ant-layout-header-height: 30vh;
 }
+/* I'm using the html selector to define my root font-size for the website*/
 html{
-    font-size:clamp(14px, 0.25vw + 13px, 16px);
+  font-size:16px;
 }
-h1.ant-typography,
-h2.ant-typography,
-h3.ant-typography,
-h4.ant-typography,
-h5.ant-typography {
+/* 
+I'm using the h1 selector to define the font-family for the website
+I'm specifying the ant-typography class here so that it wins over the deafult AntD heading styles
+*/
+h1.ant-typography{
   font-family: var(--app-heading);
   letter-spacing: 0.02em;
+}
+/*Accessibility specific styles */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: -999px;
+  background: #000;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  z-index: 2000;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.skip-link:focus {
+  left: 16px;
+  top: 16px;
 }
