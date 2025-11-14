@@ -5,6 +5,7 @@ const H1 = styled(Typography.Title)`
     &&{
         margin: 0;
         font-size:5rem;
+        word-break: initial;
     }
 `
 const Span = styled.span`

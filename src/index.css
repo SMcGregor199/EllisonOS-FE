@@ -2,7 +2,6 @@
 :root{
     --app-heading: "Fraunces", serif;
     --app-body: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-    --ant-layout-header-height: 30vh;
 }
 /* I'm using the html selector to define my root font-size for the website*/
 html{
