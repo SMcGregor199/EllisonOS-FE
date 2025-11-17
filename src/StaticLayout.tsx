@@ -4,7 +4,7 @@ import Header  from "./components/Header";
 //const { Content } = Layout;
 export default function StaticLayout(){
     return(
-        <Layout style={{paddingBlock: "1rem"}}>
+        <Layout style={{paddingBlock: "2rem"}}>
             <Header />
             {/* <Content style={{ padding: "24px" }} id="main">
                 <Outlet />

@@ -1,24 +1,22 @@
 import styled from "@emotion/styled"
-import {Typography} from "antd";
+import {Typography, Flex} from "antd";
 
 const H1 = styled(Typography.Title)`
     &&{
-        margin: 0;
-        font-size:5rem;
+        font-size:3rem;
         word-break: initial;
     }
 `
-const Span = styled.span`
-    display: block;
-`   
 export default function DisplayHeading(){
     return(
-        
-        <H1 level={1}>
-            <Span>The</Span> 
-            <Span>Ellison</Span> 
-            <Span>AI</Span> 
-            <Span>Project</Span>
-        </H1>    
+        <Flex vertical style={{flex: "0 0 25%", justifyContent:"center"}}>
+            <H1 level={1}>
+                The Ellison AI Project
+            </H1>    
+            <Typography.Paragraph style={{maxWidth:"32ch", fontSize:"1.2rem"}}>
+                The Ellison AI Project is an experiment in whether we can teach a machine to be
+                an interlocutor to a human on the life and work of the late American novelist, Ralph Ellison.
+            </Typography.Paragraph>
+        </Flex>
     )
 }
