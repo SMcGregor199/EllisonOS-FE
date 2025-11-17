@@ -1,14 +1,16 @@
-//import {Outlet} from "react-router-dom";
+import {Outlet} from "react-router-dom";
 import {Layout} from "antd";
 import Header  from "./components/Header";
-//const { Content } = Layout;
+import Footer from "./components/Footer";
+const { Content } = Layout;
 export default function StaticLayout(){
     return(
-        <Layout style={{paddingBlock: "2rem"}}>
+        <Layout style={{paddingBlock: "2rem", minHeight:"100vh"}}>
             <Header />
-            {/* <Content style={{ padding: "24px" }} id="main">
+            <Content style={{paddingInline: 50, flexGrow: 1}} id="main">
                 <Outlet />
-            </Content> */}
+            </Content>
+            <Footer />
         </Layout>
     )
 }

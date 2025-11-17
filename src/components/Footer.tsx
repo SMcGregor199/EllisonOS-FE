@@ -1,9 +1,13 @@
 import { Layout, Typography } from "antd";
+import {Link} from "react-router-dom";
 
 export default function Footer(){
     return(
         <Layout.Footer>
-            <Typography.Title level={1} style={{margin: 0}}>Footer</Typography.Title>
+           <Link to="/">About</Link>
+           <Link to="/">Case Study</Link>
+           <Link to="/">Contact</Link>
+           <Link to="/">Blog Posts</Link>
         </Layout.Footer>
     )
 }
