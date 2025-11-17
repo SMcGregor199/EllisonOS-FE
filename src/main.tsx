@@ -21,6 +21,9 @@ createRoot(document.getElementById('root')!).render(
         Menu:{
           itemBg:'transparent',
           colorText: '#fff'
+        },
+        Anchor:{
+          fontSize:16
         }
       }
   }}>

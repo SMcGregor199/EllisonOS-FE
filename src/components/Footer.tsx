@@ -1,13 +1,15 @@
-import { Layout, Typography } from "antd";
-import {Link} from "react-router-dom";
-
+import { Layout, Anchor} from "antd";
 export default function Footer(){
     return(
         <Layout.Footer>
-           <Link to="/">About</Link>
-           <Link to="/">Case Study</Link>
-           <Link to="/">Contact</Link>
-           <Link to="/">Blog Posts</Link>
+            <Anchor direction="horizontal" style={{fontSize:"1rem"}} items={[
+                {key:"about", href:"#about", title:"About"},
+                {key:"case-study", href:"#case-study", title:"Case Study"},
+                {key:"contact", href:"#contact", title:"Contact"},
+                {key:"blog-posts", href:"#blog-posts", title:"Blog Posts"},
+            ]}>
+   
+            </Anchor>
         </Layout.Footer>
     )
 }

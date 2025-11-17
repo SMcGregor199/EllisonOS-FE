@@ -2,10 +2,11 @@
 :root{
     --app-heading: "Fraunces", serif;
     --app-body: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    --root-font-size:16px;
 }
 /* I'm using the html selector to define my root font-size for the website*/
 html{
-  font-size:16px;
+  font-size:var(--root-font-size);
 }
 /* 
 I'm using the h1 selector to define the font-family for the website
@@ -33,3 +34,11 @@ h1.ant-typography{
   left: 16px;
   top: 16px;
 }
+
+.ant-anchor-link-title{
+  text-decoration: underline;
+  text-underline-offset: .25rem;
+
+}
+    
+
