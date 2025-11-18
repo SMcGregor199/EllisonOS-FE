@@ -1,4 +1,4 @@
-import {Layout, Flex, Anchor} from "antd";
+import {Layout, Flex, Typography} from "antd";
 import styled from "@emotion/styled";
 import ellisonPortrait from "/imgs/ellison-portrait.jpg";
 import DisplayHeading from "./DisplayHeading";
@@ -11,6 +11,15 @@ const SiteHeader = styled(Layout.Header)`
     background-position:75%;
     background-repeat:no-repeat;
 `
+const HeaderNav = styled.nav`
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+    a{
+        color:#fff;
+        font-size:1rem;
+    }
+`
 export default function Header(){
     const screens = Grid.useBreakpoint();
     const backgroundSize = screens.xl ? "contain" : "45%";
@@ -19,13 +28,12 @@ export default function Header(){
         <>
             <a className="skip-link" href="#main">Skip to main content</a>
             <SiteHeader style={{backgroundImage:backgroundImage, backgroundSize:backgroundSize}}>
-                <Anchor direction="horizontal" style={{fontSize:"1rem"}} items={[
-                    {key:"about", href:"#about", title:"About"},
-                    {key:"case-study", href:"#case-study", title:"Case Study"},
-                    {key:"contact", href:"#contact", title:"Contact"},
-                    {key:"blog-posts", href:"#blog-posts", title:"Blog Posts"},
-                    ]}>
-                </Anchor>
+                <HeaderNav>
+                    <Typography.Link href="#about">About</Typography.Link>
+                    <Typography.Link href="#case-study">Case Study</Typography.Link>
+                    <Typography.Link href="#contact">Contact</Typography.Link>
+                    <Typography.Link href="#blog-posts">Blog Posts</Typography.Link>
+                </HeaderNav>
                 <Flex style={{height:"inherit"}}>
                     <DisplayHeading/>
                 </Flex>
