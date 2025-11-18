@@ -14,7 +14,10 @@ createRoot(document.getElementById('root')!).render(
       token:{
         colorBgLayout: "#111729",
         colorText: '#fff',
-        fontFamily: "var(--app-body)"
+        fontFamily: "var(--app-body)",
+          screenXL: 1250,     
+          screenXLMin: 1250,
+          screenXLMax: 1599,
 
       },
       components:{
