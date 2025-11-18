@@ -12,7 +12,6 @@ createRoot(document.getElementById('root')!).render(
     theme={{
       cssVar: true,
       token:{
-        colorBgLayout: "#111729",
         colorText: '#fff',
         fontFamily: "var(--app-body)",
           screenXL: 1250,     
@@ -27,6 +26,10 @@ createRoot(document.getElementById('root')!).render(
         },
         Anchor:{
           fontSize:16
+        },
+        Layout:{
+          bodyBg:"var(--ant-layout-header-bg)",
+          footerBg:"var(--ant-layout-header-bg)"
         }
       }
   }}>
