@@ -27,7 +27,7 @@ export default function Header(){
                     ]}>
                 </Anchor>
                 <Flex style={{height:"inherit"}}>
-                    <DisplayHeading screenSize={screens}/>
+                    <DisplayHeading/>
                 </Flex>
             </SiteHeader>
         </>
