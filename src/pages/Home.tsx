@@ -1,6 +1,5 @@
-import LaunchApp from "../components/LaunchApp";
 export default function Home(){
     return(
-        <LaunchApp/>
+        <h1>This is the About Section</h1>
     )
 }

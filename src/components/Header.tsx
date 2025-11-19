@@ -1,20 +1,23 @@
-import {Layout, Flex, Typography} from "antd";
+import {Layout, Typography} from "antd";
 import styled from "@emotion/styled";
 import ellisonPortrait from "/imgs/ellison-portrait.jpg";
 import DisplayHeading from "./DisplayHeading";
+import LaunchApp from "./LaunchApp";
 import { Grid } from "antd";
 
 const SiteHeader = styled(Layout.Header)`
-    height:70vh;
-    overflow:hidden;
+    height:100vh;
     background-blend-mode:luminosity;
     background-position:75%;
     background-repeat:no-repeat;
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
 `
 const HeaderNav = styled.nav`
     display:flex;
     flex-wrap:wrap;
-    gap:1rem;
+    gap:2rem;
     a{
         color:#fff;
         font-size:1rem;
@@ -34,9 +37,9 @@ export default function Header(){
                     <Typography.Link href="#contact">Contact</Typography.Link>
                     <Typography.Link href="#blog-posts">Blog Posts</Typography.Link>
                 </HeaderNav>
-                <Flex style={{height:"inherit"}}>
-                    <DisplayHeading/>
-                </Flex>
+                <DisplayHeading/>
+                <LaunchApp/>
+
             </SiteHeader>
         </>
     )

@@ -5,10 +5,10 @@ export default function DisplayHeading(){
     const screens = Grid.useBreakpoint();
     const isMd = screens.md ?? false;
 
-    const flexSize = isMd ? "0 0 35%" : "0 0 100%";
+    const widthLength = isMd ? "35%" : "100%";
     return(
         
-        <Flex vertical style={{flex:flexSize, justifyContent:"center"}}>
+        <Flex vertical style={{justifyContent:"center", maxWidth:widthLength}}>
             <Typography.Title level={1} style={{fontSize:"clamp(2.5rem, 8vw, 4rem)", wordBreak:"initial"}}>
                 The Ellison AI Project
             </Typography.Title>    
