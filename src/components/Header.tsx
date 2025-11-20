@@ -8,7 +8,7 @@ import { Grid } from "antd";
 const SiteHeader = styled(Layout.Header)`
     height:100vh;
     background-blend-mode:luminosity;
-    background-position:right;
+    background-position: 80% center;
     background-repeat:no-repeat;
     display:flex;
     flex-direction:column;
@@ -25,7 +25,7 @@ const HeaderNav = styled.nav`
 `
 export default function Header(){
     const screens = Grid.useBreakpoint();
-    const backgroundSize = screens.xl ? "auto" : "45%";
+    const backgroundSize = screens.xl ? "cover" : "45%";
     const backgroundImage = screens.md ? `url(${ellisonPortrait})` : "none";
     return(
         <>
