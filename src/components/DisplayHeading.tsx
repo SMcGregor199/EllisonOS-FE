@@ -1,14 +1,8 @@
 import {Typography, Flex} from "antd";
-import { Grid } from "antd";
-
 export default function DisplayHeading(){
-    const screens = Grid.useBreakpoint();
-    const isMd = screens.md ?? false;
-
-    const widthLength = isMd ? "35%" : "100%";
     return(
         
-        <Flex vertical style={{justifyContent:"center", maxWidth:widthLength}}>
+        <Flex vertical style={{justifyContent:"center"}}>
             <Typography.Title level={1} style={{fontSize:"clamp(2.5rem, 8vw, 4rem)", wordBreak:"initial"}}>
                 The Ellison AI Project
             </Typography.Title>    
