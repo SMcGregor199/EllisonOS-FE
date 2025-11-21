@@ -43,11 +43,11 @@ h1.ant-typography{
   height:100%;
 }
 .header-text{
-  width:35%;
+  width:fit-content;
   position:relative;
   z-index:1;
   padding:2rem;
   border-radius:1rem;
-  background-color: rgba(0, 0, 0, 0.65);;
+  background-color: rgba(0, 0, 0, 0.45);;
   height:fit-content;
 }
