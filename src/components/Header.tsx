@@ -17,7 +17,7 @@ const HeaderImage = styled(Image)`
     width: 100%;
     height:inherit;
     object-fit: cover;
-    object-position: 80% 15%;
+    object-position: 0% 15%;
     }
 `
 const HeaderNav = styled.nav`

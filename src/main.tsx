@@ -20,13 +20,6 @@ createRoot(document.getElementById('root')!).render(
 
       },
       components:{
-        Menu:{
-          itemBg:'transparent',
-          colorText: '#fff'
-        },
-        Anchor:{
-          fontSize:16
-        },
         Layout:{
           bodyBg:"var(--ant-layout-header-bg)",
           footerBg:"var(--ant-layout-header-bg)"
