@@ -8,15 +8,16 @@ const SiteHeader = styled(Layout.Header)`
     height:100vh;
     display:flex;
     gap:2rem;
-    position:relative
+    position:relative;
     overflow:hidden;
+    padding-top:50px;
 `
 const HeaderImage = styled(Image)`
     &&{
     width: 100%;
     height:inherit;
     object-fit: cover;
-    object-position: 80% 40%;
+    object-position: 80% 15%;
     }
 `
 const HeaderNav = styled.nav`
